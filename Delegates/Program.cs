@@ -19,8 +19,6 @@ namespace Delegates
             //PhotoProcessor.PhotoFilterHandler filterHandler = photoFilters.ApplyBrightness; 
 
             Action<Photo> filterHandler = photoFilters.ApplyBrightness;
-
-
             filterHandler += photoFilters.Resize;
             filterHandler += RemoveRedEyeFilter;
 
